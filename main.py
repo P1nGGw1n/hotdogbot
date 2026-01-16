@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 # Settings - Use environment variables for Cloud Run
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "8382908203:AAFcG1-kIoQSgmX7GP8HfUDyOwlI8GZN73k")
 TARGET_USER_ID = int(os.environ.get("TARGET_USER_ID", "835851252"))
-WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "")  # Set this to your Cloud Run URL
+WEBHOOK_URL = os.environ.get("WEBHOOK_URL", "https://hotdogbot.fly.dev")  # Set this to your Cloud Run URL
 REACTIONS = ["🌭"]  # Hot dog reactions
 
 # Flask app
